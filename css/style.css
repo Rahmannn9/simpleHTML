@@ -231,7 +231,7 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    background-image: url(../images/banner-bg.jpg);
     height: auto;
     background-size: 100%;
     padding: 0px 0px 20px 0px;
@@ -482,7 +482,6 @@ button {
 .about_taital_main {
     width: 100%;
     padding-left: 100px;
-    padding-top: 70px;
 }
 
 .padding_right_0 {
@@ -993,7 +992,7 @@ button {
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: #122c2d;
+    background-color: black;
     height: auto;
 }
 
