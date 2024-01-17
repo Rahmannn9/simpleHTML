@@ -1,280 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<style type="text/css">
-		@page { size: 8.5in 11in; margin: 1in }
-		p { line-height: 115%; text-align: left; orphans: 2; widows: 2; margin-bottom: 0.1in; background: transparent }
-		p.western { font-family: "Calibri", serif; font-size: 11pt; so-language: az-Latn-AZ }
-		p.cjk { font-family: "Times New Roman"; font-size: 11pt; so-language: az-Latn-AZ }
-		p.ctl { font-family: "Times New Roman"; font-size: 11pt; so-language: ar-SA }
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Contract for Tourism Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+    <script>
+        function validateReservationNumber() {
+            var reservationInput = document.getElementById("reservationNumber");
+            var pattern = /^ST\d{5}$/; // Should start with ST and be followed by 5 digits
+
+            // if (!pattern.test(reservationInput.value)) {
+            //     alert("Xəta: Rezervasiya nömrəsi ST ilə başlamalı və ondan sonra 5 rəqəm olmalıdır (məsələn, ST12345).");
+            //     reservationInput.value = ""; // Clear the input if not matching the pattern
+            // }
+        }
+
+        function updateDate() {
+            var currentDateElement = document.getElementById("currentDate");
+            var currentDate = new Date();
+            var options = { day: 'numeric', month: 'numeric', year: 'numeric' };
+            var formattedDate = currentDate.toLocaleDateString('tr-TR', options);
+            currentDateElement.textContent = formattedDate;
+        }
+
+        // Update the date on page load
+        window.onload = function () {
+            updateDate();
+            validateReservationNumber(); // You can remove this line if you don't want to trigger validation on page load
+        };
+    </script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
-<body lang="en-US" link="#000080" vlink="#800000" dir="ltr">
-<table width="710" cellpadding="7" cellspacing="0">
-	<col width="364"/>
 
-	<col width="318"/>
+<body>
 
-	<tr valign="top">
-		<td width="364" style="border: none; padding: 0in"><p lang="az-Latn-AZ" class="western" align="center">
-			&nbsp;</p>
-		</td>
-		<td width="318" style="border: none; padding: 0in"><p lang="az-Latn-AZ" class="western" align="center">
-			&nbsp;</p>
-		</td>
-	</tr>
-</table>
-<p lang="az-Latn-AZ" class="western" align="center" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>Turizm
-xidmətlərinin göstərilməsi haqqında onlayn müqavilə</b></font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="center" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>Bakı
-şəhəri
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    </b></font></font></font><font color="#ff0000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="fr-FR"><b><span style="background: #ffff00">01.01.</span></b></span></font></font></font><font color="#ff0000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>2024</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>
-- cü il</b></font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Bundan
-sonra&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«Turoperator»</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">&nbsp;adlandırılacaq,
-Azərbaycan Respublikasının qanunları və əz Nizamnaməsi
-əsasında fəaliyyət göstərən&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>“SUMMER
-TOUR AZERBAIJAN” MMC-nin (VÖEN:</b></font></font></font><font color="#000000"><font face="Times New Roman, serif">&nbsp;1404895991</font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>)
-İcraçı Direktoru Qüdrət Hacıyev&nbsp;</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">şəxsində&nbsp;və
-gələcəkdə&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>“TURİST”</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">&nbsp;adlanacaq&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b><span style="background: #ffff00">_____</span></b></font></font></font><font color="#ff0000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b><span style="background: #ffff00">(Bu
-hissəyə məlumatlar imput olunur)</span></b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b><span style="background: #ffff00">______</span></b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>&nbsp;oğlu/qızı</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">&nbsp;şəxsində,
-birlikdə Tərəflər, ayrılıqda isə Tərəf adlandırılaraq,
-aşağıdakılar barədə hazırki Müqaviləni&nbsp; (bundan
-sonra&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Müqavilə</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>»&nbsp;</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">adlanacaq)</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>&nbsp;</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">bağladılar:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>1.
-MÜQAVİLƏNİN PREDMETİ</b></font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 0.18in; margin-top: 0.14in; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">1.1.</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">
-Bu Müqavilə ilə müəyyən edilmiş şərtlərə
-əsasən&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Turoperator»
-Turistin sifarişinə uyğun kompleks turizm xidmətlərini təqdim
-etməyi, Turist isə göstərilən xidmətlərin dəyərini
-“Turoperator»ə ödəməyi öhdələrinə götürürlər.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 0.18in; margin-top: 0.14in; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">1.2.</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>
-«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Turoperator»
-Turistə xidmət (xidmətlərin bir qisminin) göstərilməsi üzrə
-öhdəliyi Turistin yerləşdirilməsi və yaşayışı üzrə
-bilavasitə xidmətlər təqdim edən digər tərəfə (sonra mətndə
-- Qəbul edən tərəf) həvalə etmək hüququna malikdir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">1.3.</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">
-Bu Müqavilə üzrə təqdim edilən turizm xidmətləri
-Turoperatorun təxsisetmə sistemində qeydiyyata alınmış
-</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">____</font></font></font><font color="#ff0000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">input
-format: </font></font></font><font color="#ff0000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>ST00000</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">_____</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">
-nömrəli rezervasiya ilə eynidir:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<br/>
+    <h2>Turizm xidmətlərinin göstərilməsi haqqında onlayn müqavilə</h2>
+    <div style="display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: x-large;">
+        Bakı şəhəri
+        <!-- <br/> -->
+        <div style="display: flex; align-items: center;">
+            <div id="currentDate"></div>-cü il
+        </div>
+    </div>
 
-</p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; text-indent: -0.25in; margin-bottom: 0in">
-<br/>
+    <p>Bundan sonra «Turoperator» adlandırılacaq, Azərbaycan Respublikasının qanunları və əz Nizamnaməsi əsasında
+        fəaliyyət göstərən “SUMMER TOUR AZERBAIJAN” MMC-nin (VÖEN: 1404895991) İcraçı Direktoru Qüdrət Hacıyev şəxsində
+        və gələcəkdə “TURİST” adlanacaq
+        <input style="background-color: yellow;" type="text" placeholder="Turistin adı ata adı" /> oğlu/qızı şəxsində, birlikdə Tərəflər, ayrılıqda isə
+        Tərəf adlandırılaraq, aşağıdakılar barədə hazırki Müqaviləni (bundan sonra «Müqavilə» adlanacaq) bağladılar:
+    </p>
 
-</p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; text-indent: -0.25in; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; text-indent: -0.25in; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>2.
-TƏRƏFLƏRİN HÜQUQ VƏ VƏZİFƏLƏRİ</b></font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">2.1.
-“TURİST”in hüquqları:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-
-Müvəqqəti yaşayış ölkəsinə</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>&nbsp;</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">giriş
-qaydaları haqqında&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”dən
-lazımı və doğru məlumat almaq;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-
-Müqavilə üzrə üzərinə göturduyu öhdəlikləri vaxtında və
-lazımınca icra etməyi və onların pozulmasına yol
-verməməyi&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”dən
-tələb edir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">2.2
-“TURİST”in vəzifələri:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-
-““TUROPERATOR»”ə, səyahət üçün lazım olan sənədləri
-təqdim etməyi;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-
-getmə məntəqəsinə vaxtında gəlməyi;.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 0.18in; margin-bottom: 0.14in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-turizm
-xidmətlərinin dəyərini 3 bank günü müddətində tam həcmdə
-ödəməyi.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 0.18in; margin-bottom: 0.14in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-turizm
-xidmətlərinin təşkili və həyata keçirilməsi üçün tələb
-olunan bütün sənədlərin Turizm agentinin müəyyən etdiyi
-müddətdə təqdim edilməsi.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 0.18in; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-bütün
-texniki təhlükəsizlik qaydalarına, o cümlədən yanğından
-mühafizə qaydalarına, ümumi zəruri tələblərə, şəxsi
-təhlükəsizliyin və ətraf şəxslərin təhlükəsizliyinin təmin
-edilməsi üçün qoruyucu və ehtiyat tədbirlərə riayət
-olunması.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 0.18in; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-ətraf
-təbii mühitin və mədəni irsin mühafizəsi üzrə bütün
-tələblərə riayət olunması, ətraf və sosial-mədəni mühitə
-mənfi təsirin minimallaşdırılması və/və ya dayandırılması
-üzrə bütün mümkün tədbirlərin görülməsi, yerləşdiyi
-məkanda daxili intizam qaydalarına riayət olunması.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 0.18in; margin-bottom: 0.14in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-
-ətraf və sosial-mədəni mühitə ziyan vurulduğu halda zərərin
-əvəzinin tam həcmdə Turizm agentinə və ya Qəbul edən tərəfə
-ödənilməsi.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">2.3&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”in
-hüquqları:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-
-Əgər “Turoperator» tərəfindən turizm zərfinin realizə
-edilməsi zamanı &nbsp;məsuliyyətsizlik (“Turoperator»dən
-asılı olan səbəblərdən ləngimə və ya gecikdirmə) halları
-baş verərsə, lazım olduğu təqdirdə Müqavilədə göstərilən
-xidmətləri başqa eyni dərəcəli və ya üstün dərəcəli
-xidmətlərlə əvəz etmək;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-turistin
-vurduğu ziyanın əvəzinin ödənilməsini tələb etmək;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-gözlənilməz
-situasiyaların təsiri səbəbindən marşrut üzrə hərəkət
-qrafikini və ekskursiya-mədəni tədbirlərin ardıcıllığını
-dəyişmək;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-“Turizm
-haqqında” Qanunu rəhbər tutaraq, şəraitdə obyektiv
-dəyişikliklər baş verdikdə turizm xidmətlərinin ilkin
-razılaşdırılmış dəyərini yüksəltmək.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">2.4&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”in
-vəzifələri:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-
-Azərbaycan Respublikasının qanunlarına və Müqaviləyə əsasən
-turizm xidmətini təşkil etməyi;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">-
-Səyahət üçün lazım olan sənədlərin hazirlanmasında köməklik
-göstərməyi öhdəsinə götürür.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>3.
-TURİZM XİDMƏTLƏRİNİN DƏYƏRİ VƏ TƏRƏFLƏRİN CAVABDEHLİYİ</b></font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="2" style="font-size: 10pt"><b>3.1.Hazırkı
-Müqaviləyə əsasən göstərilən turizm xidmətlərinin dəyəri</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #ffff00">
-bu müqavilənin </span></b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #ffff00">1.3.-cü</span></b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #ffff00">
- </span></b></font></font></font><font color="#ff0000"><font face="Times New Roman, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #ffff00">maddəsində</span></b></font></font></font><font color="#ff0000"><font face="Times New Roman, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #ffff00">
-</span></b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #ffff00">turistin
-müqaviləyə əlavə etdiyi ST abriviaturası ilə başlayan
-rezervasiya nömrəsi altında Turoperatorun təxsisetmə sistemində
-turist üçün rezerv edilən turizm paketinin qiymətinə
-bərabərdir</span></b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="2" style="font-size: 10pt"><b>.</b></font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.2.&nbsp;
-Hazırkı Müqavilənin şərtlərinə əsasən vəsaitin manatla
-qəbul edilməsi,&nbsp;Agentun Agenti tərəfindən ABŞ dollarının
-mərkəzi&nbsp;Bankın ödəniş gününə olan məzənnəsinin
-üzərinə&nbsp;&nbsp;əməliyyat xərcləri də əlavə olunmaqla
-hesablanmış məzənnə həyata keçiriləcək.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.3.
-Şəraitin əsaslı dəyişməsi ilə əlaqədar
-olaraq&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”
-Müqaviləyə dəyişiklik etmək hüququna malikdir və ya “TURİST”
-Müqaviləni pozmaq və&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”in
-çəkdiyi faktiki xərcləri çıxmaqla, ödənilmiş məbləği geri
-tələb etmək hüququna malikdir. Şəraitin əsaslı dəyişməsinə
-aşağıdakılar aiddir:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.3.1.
-Müqavilədə də göstərilən səyahət şəraitinin pisləşməsi;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.3.2.
-səyahətin müddətlərinin dəyişməsi, bu zaman tərəflər
-razılığa gəlirlər ki, müddətin dəyişməsini onlar gedişin
-başlanma və ya qurtarma vaxtının 24 saatdan çox dəyişməsi
-kimi başa düşürlər;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.3.3.səyahətin
-baş tutması üçün müqavilədə göstərilmiş qrupda turistlərin
-minimal sayının natamamlığı</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.3.4.
-nəqliyyat xərclərinin əvvəlcədən gözlənilməmiş artımı;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.3.5.
-tərəflər razılığa gəlirlər ki, səyahət şəraitinin
-pisləşməsini onlar belə başa düşürlər:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.3.5.1.
-otelin daha aşağı kateqoriyalı otellə əvəz edilməsi;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.3.5.2.
-əvvəlcədən sifariş edilmiş qidalanmanın pisləşməsi;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.3.5.3.
-aviauçuş növünün (klasın) daha ucuz növlə (klasla) dəyişməsi;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.4.
-“TURİST”in əvvəlcədən saxlanılmış turizm məhsulundan və
-ya turizm xidmətindən Müqavilənin 3.3-cü bəndində müəyyən
-edilməyən səbəblərdən imtinası zamanı,
-“TURİST”&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”ə
-bu rədd ilə bağlı faktiki məsrəflərini kompensasiya edir
-və&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»ə&nbsp;
-cərimə şəklində dəbbə pulu ödəyir ki, bunun da məbləği
-cərimə tutulmasına gətirib çıxaran vəziyyətin başlanması
-vaxtından asılıdır və aşağıdakılardan ibarətdir:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-left: 1.97in; text-indent: 0.49in; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Ekonom
-sinfi üzrə:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<dl>
+    <h3>1. MÜQAVİLƏNİN PREDMETİ</h3>
+
+    <p>1.1. Bu Müqavilə ilə müəyyən edilmiş şərtlərə əsasən «Turoperator» Turistin sifarişinə uyğun kompleks turizm
+        xidmətlərini təqdim etməyi, Turist isə göstərilən xidmətlərin dəyərini “Turoperator»ə ödəməyi öhdələrinə
+        götürürlər.</p>
+
+    <p>1.2. «Turoperator» Turistə xidmət (xidmətlərin bir qisminin) göstərilməsi üzrə öhdəliyi Turistin yerləşdirilməsi
+        və yaşayışı üzrə bilavasitə xidmətlər təqdim edən digər tərəfə (sonra mətndə - Qəbul edən tərəf) həvalə etmək
+        hüququna malikdir.</p>
+
+    <p>1.3. Bu Müqavilə üzrə təqdim edilən turizm xidmətləri Turoperatorun təxsisetmə sistemində qeydiyyata alınmış
+        <input style="background-color: yellow;" type="text" id="reservationNumber" placeholder="ST12345"
+            onblur="validateReservationNumber()" />
+        nömrəli rezervasiya ilə eynidir:
+    </p>
+
+    <h2>2. TƏRƏFLƏRİN HÜQUQ VƏ VƏZİFƏLƏRİ</h2>
+
+    <h3>2.1. “TURİST”in hüquqları:</h3>
+    <ul>
+        <li>Müvəqqəti yaşayış ölkəsinə giriş qaydaları haqqında «TUROPERATOR»”dən lazımı və doğru məlumat almaq;</li>
+        <li>Müqavilə üzrə üzərinə göturduyu öhdəlikləri vaxtında və lazımınca icra etməyi və onların pozulmasına yol verməməyi «TUROPERATOR»”dən tələb edir.</li>
+    </ul>
+
+    <h3>2.2 “TURİST”in vəzifələri:</h3>
+    <ul>
+        <li>““TUROPERATOR»”ə, səyahət üçün lazım olan sənədləri təqdim etməyi;</li>
+        <li>getmə məntəqəsinə vaxtında gəlməyi;</li>
+        <li>turizm xidmətlərinin dəyərini 3 bank günü müddətində tam həcmdə ödəməyi;</li>
+        <li>turizm xidmətlərinin təşkili və həyata keçirilməsi üçün tələb olunan bütün sənədlərin Turizm agentinin müəyyən etdiyi müddətdə təqdim edilməsi;</li>
+        <li>bütün texniki təhlükəsizlik qaydalarına, o cümlədən yanğından mühafizə qaydalarına, ümumi zəruri tələblərə, şəxsi təhlükəsizliyin və ətraf şəxslərin təhlükəsizliyinin təmin edilməsi üçün qoruyucu və ehtiyat tədbirlərə riayət olunması;</li>
+        <li>ətraf təbii mühitin və mədəni irsin mühafizəsi üzrə bütün tələblərə riayət olunması, ətraf və sosial-mədəni mühitə mənfi təsirin minimallaşdırılması və/və ya dayandırılması üzrə bütün mümkün tədbirlərin görülməsi, yerləşdiyi məkanda daxili intizam qaydalarına riayət olunması;</li>
+        <li>ətraf və sosial-mədəni mühitə ziyan vurulduğu halda zərərin əvəzinin tam həcmdə Turizm agentinə və ya Qəbul edən tərəfə ödənilməsi.</li>
+    </ul>
+
+    <h2>3. TURİZM XİDMƏTLƏRİNİN DƏYƏRİ VƏ TƏRƏFLƏRİN CAVABDEHLİYİ</h2>
+
+  <h4>3.1 Hazırkı Müqaviləyə əsasən göstərilən turizm xidmətlərinin dəyəri bu müqavilənin 1.3.-cü maddəsində turistin müqaviləyə əlavə etdiyi ST abriviaturası ilə başlayan rezervasiya nömrəsi altında Turoperatorun təxsisetmə sistemində turist üçün rezerv edilən turizm paketinin qiymətinə bərabərdir.</h4>
+  <h4>3.2. Hazırkı Müqavilənin şərtlərinə əsasən vəsaitin manatla qəbul edilməsi, Agentun Agenti tərəfindən ABŞ dollarının mərkəzi Bankın ödəniş gününə olan məzənnəsinin üzərinə  əməliyyat xərcləri də əlavə olunmaqla hesablanmış məzənnə həyata keçiriləcək.</h4>
+  <h4>3.3. Şəraitin əsaslı dəyişməsi ilə əlaqədar olaraq «TUROPERATOR»” Müqaviləyə dəyişiklik etmək hüququna malikdir və ya “TURİST” Müqaviləni pozmaq və «TUROPERATOR»”in çəkdiyi faktiki xərcləri çıxmaqla, ödənilmiş məbləği geri tələb etmək hüququna malikdir. Şəraitin əsaslı dəyişməsinə aşağıdakılar aiddir:</h4>
+  <h4>3.3.1. Müqavilədə də göstərilən səyahət şəraitinin pisləşməsi;</h4>
+  <h4>3.3.2. səyahətin müddətlərinin dəyişməsi, bu zaman tərəflər razılığa gəlirlər ki, müddətin dəyişməsini onlar gedişin başlanma və ya qurtarma vaxtının 24 saatdan çox dəyişməsi kimi başa düşürlər;</h4>
+  <h4>3.3.3.səyahətin baş tutması üçün müqavilədə göstərilmiş qrupda turistlərin minimal sayının natamamlığı<h4>
+  <h4>3.3.4. nəqliyyat xərclərinin əvvəlcədən gözlənilməmiş artımı;</h4>
+  <h4>3.3.5. tərəflər razılığa gəlirlər ki, səyahət şəraitinin pisləşməsini onlar belə başa düşürlər:</h4>
+  <h4>3.3.5.1. otelin daha aşağı kateqoriyalı otellə əvəz edilməsi;</h4>
+  <h4>3.3.5.2. əvvəlcədən sifariş edilmiş qidalanmanın pisləşməsi;</h4>
+  <h4>3.3.5.3. aviauçuş növünün (klasın) daha ucuz növlə (klasla) dəyişməsi;</h4>
+  <h4>3.4. “TURİST”in əvvəlcədən saxlanılmış turizm məhsulundan və ya turizm xidmətindən Müqavilənin 3.3-cü bəndində müəyyən edilməyən səbəblərdən imtinası zamanı, “TURİST” «TUROPERATOR»”ə bu rədd ilə bağlı faktiki məsrəflərini kompensasiya edir və «TUROPERATOR»ə  cərimə şəklində dəbbə pulu ödəyir ki, bunun da məbləği cərimə tutulmasına gətirib çıxaran vəziyyətin başlanması vaxtından asılıdır və aşağıdakılardan ibarətdir:</h4>
+  <dl>
 	<dd>
 	<table width="593" cellpadding="7" cellspacing="0">
-		<col width="186"/>
+		<colgroup><col width="186">
 
-		<col width="155"/>
+		<col width="155">
 
-		<col width="204"/>
+		<col width="204">
 
-		<tbody>
+		</colgroup><tbody>
 			<tr>
 				<td width="186" height="2" style="border-top: 2.25pt solid #000000; border-bottom: none; border-left: 2.25pt solid #000000; border-right: 2.25pt solid #000000; padding: 0in 0.08in"><p lang="az-Latn-AZ" class="western" align="center">
 					<font color="#000000">&nbsp;</font></p>
@@ -449,334 +294,14 @@ sinfi üzrə:</font></font></font></p>
 			</tr>
 		</tbody>
 	</table>
-</dl>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.4.1.
-Əgər konkret istiqamətdə tətbiq olunan cərimə sanksiyaları
-fərqli olarsa Turistə tətbiq edilən cərimə sanksiyaları
-hazırkı müqavilənin ayrılmaz hissəsi olan 1 saylı Əlavə
-şəklində rəsmiləşdiriləcək.&nbsp;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.4.2.&nbsp;&nbsp;Uçuş
-günü ləğv edilmə və ya dəyişiklik qəbul edilmir. Uçuşdan
-sonra ləğv etmə və ya dəyişmə sorğusuna həmin an mövcud
-olan vəziyyətdən asılı olaraq&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”
-tərəfindən baxıla bilər</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="4" style="font-size: 14pt">&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.4.3.
-Əgər qarşılayan tərəfin təşəbbüsü ilə yuxarıda qeyd
-edilən şərtlərdə dəyişikliklər edilərsə, bu
-barədə&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”
-“TURİST”ə hazırki Müqavilənin imzalanmasından öncə
-xəbərdarlıq edir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.4.4.
-Aksiyalar üzrə alınan aviabiletlər, turlar və digər xidmətlər
-və ya turizm məhsulları dəyişdirilə və qaytarıla bilməz.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.5.&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”
-xarici pasportun etibarsız olmasına, səfirlik tərəfindən
-vizanın verilməməsinə, “TURİST”in gömrük və sərhəd
-nəzarətindən keçə bilməməsinə görə “TURİST” qarşısında
-məsuliyyət daşımır.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 0.18in; margin-bottom: 0.14in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.6.
-Hər hansı bir səbəbdən vizanın xarici ölkənin Miqrasiya
-Xidməti tərəfindən təqdim edilməməsinə görə Tərəflər
-(“Turoperator» və Agent) heç bir maddi və mənəvi məsuliyyət
-daşımırlar. Sözügedən məsələyə uyğun olaraq, vizanın
-turist tərəfindən alınmamasına görə,&nbsp; öncədən sifariş
-olunmuş turizm xidmətlərinə 3.4-cü bənddə əks edilən müvafiq
-cərimə sanksiyaları tətbiq edilir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.7.
-Tura daşıyıcıların, sığorta şirkətlərinin və digər 3-cü
-şəxslərin və ya tərəflərin xidmətləri daxil olduğu
-halda,&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”
-yalnız əsasında xidmətlər göstərilən sənədlərin düzgün
-rəsmiləşdirilməsinə cavabdehdir. “TURİST”ə&nbsp;
-göstərilən xidmətlərin təqdim edilməsi ilə bağlı sonrakı
-münasibətlər&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”in
-iştirakı olmadan həyata keçirilir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.8.&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”
-onun səlahiyyətinə daxil olmayan pozuntu və hərəkətlərə görə
-məsuliyyət daşımır.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.9.&nbsp;&nbsp;&nbsp;&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">TUROPERATOR»”
-aşağıdakı bəndlər üzrə məsuliyyət daşımır:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Azərbaycan və xarici dövlətlərin ərazisində fəaliyyət
-göstərən gömrük, emiqrasiya, sərhəd və digər xidmətlər
-tərəfindən turistin günahı üzündən səfərdən çıxarılması.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Turistin yükünü yükdaşiyanın məsuliyyəti altında olduğu
-dövrdə və yükün yükdaşınmasında olmadığı dövrdə.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Səyahətin qiymətinin nəqliyyat vasitələrinin yol qiymətlərinin
-yüksəlməsi ilə əlaqədar qalxdığı zaman.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">d)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Turist səyahətə gecikdiyi zaman tam maddi məsuliyyət daşıyır.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.10.
-Viza tələb olunan istiqamətlərdə, viza həmin ölkənin müəyyən
-olunmuş qayda və qanunvericiliyi əsasında Azərbaycan
-Respublikası ərazisində və ya təmsilçi ölkənin ərazisindəki
-səfirlik, konsulluq və ya istiqamət olan ölkənin miqrassiya
-orqanında rəsmiləşdirilir. “TURİST”&nbsp; tərəfindən viza
-qayda və/və ya qanun pozuntusu və bu kimi digər hallar baş
-verdikdə Azərbaycan Respublikasının və/və ya viza alınan
-ölkənin müəyyən qanunvericiliyi əsasında həll olunur. Viza
-üçün alınan rüsum heç bir halda geri ödənilmir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">3.11.
-Hava Yolu şirkəti reys cədvəlində hər hansı dəyişiklik və
-yaxud ləğvetmə tətbiq edərsə, Agent və&nbsp;</font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>«</b></font></font></font><font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">Turoperator»&nbsp;
-buna görə məsuliyyət daşımırlar.Agent və “Turoperator»
-bunun müqabilində tarix dəyişikliyi və yaxud eyni tarixlərə
-fərqli reyslər təklif və təqdim edə bilərlər. Bununla
-əlaqədar olaraq, turun qiymətində müvafiq dəyişikliklər
-nəzərdə tutula bilər.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 0.21in; margin-bottom: 0in; background: #ffffff">
-<span style="display: inline-block; border: none; padding: 0in"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b><font color="#000000">4.
-İDDİALARIN İRƏLİ SÜRÜLMƏSİ VƏ MÜHABİSƏLƏRİN HƏLLİ
-QAYDASI</span></b></font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">41.
-Turistin təqdim edilən turizm xidmətlərinə dair iddiası meydana
-çıxdıqda bütün mübahisə və fikir ayrılıqlarını Qəbul
-edən tərəfin səlahiyyətli nümayəndəsi ilə həll etməlidir.
-Meydana çıxan fikir ayrılıqlarının yerində həll edilərək
-aradan qaldırılması qeyri-mümkün olduqda, Qəbul edən tərəfin
-nümayəndəsi tərəfindən iddia irəli sürən Turistlə birlikdə
-protokol tərtib edilərək, Turistin iddiasının xarakteri ətraflı
-təsvir edilir və onların aradan qaldırılması üzrə görülən
-tədbirlər göstərilir. Qeyd olunan protokol iki nüsxədə tərtib
-olunur və həm Turist, həm də Qəbul edən tərəfin nümayəndəsi
-tərəfindən imzalanmalıdır.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">4.2.
-Turist ona təqdim edilən alternativ xidmətdən istifadə etdiyi
-halda iddia əsassız, Müqavilə üzrə xidmətlər isə lazımi
-qaydada təqdim edilmiş hesab edilir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">4.3.
-Qəbul edən tərəfin səlahiyyətli nümayəndəsi tərəfindən
-müvafiq sənədlərlə təsdiq edilməyən və Turist tərəfindən
-birtərəfli qaydada rəsmiləşdirilən iddialar əsassız hesab
-edilir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 107%; margin-bottom: 0in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">4.4.
-Turist səfərdən qayıtdıqdan sonra 14 gündən gec olmayan
-müddətdə Turizm agentinə iddiasını və sənədləri təqdim edə
-bilər. Turizm agenti Turistdən qəbul etdiyi iddianı və sənədləri
-onları aldığı andan 30 gün müddətində nəzərdən keçirir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">4.5.
-Tərəflər arasında danışıqlar yolu ilə və ya iddia qaydasında
-tənzimlənməyən bütün mübahisələr və fikir ayrılıqları
-qüvvədə olan qanunvericiliyə müvafiq qaydada Azərbaycan
-Respublikasının müvafiq Məhkəmələrində həll edilir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in; background: #ffffff">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 107%; margin-bottom: 0in; background: #ffffff">
-<span style="display: inline-block; border: none; padding: 0in"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b><font color="#000000">5.
-FORS-MAJOR</span></b></font></font></font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 0.18in; margin-bottom: 0.14in; background: #ffffff">
-<font color="#000000">&nbsp;<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">5.1.Aşağıda
-sadalanan fors-major hallar meydana çıxdığı təqdirdə Tərəflər
-bu Müqavilə üzrə öhdəliklərdən azad edilirlər və
-bir-birlərinin qarşısında məsuliyyət daşımırlar:</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 0.18in; margin-bottom: 0.14in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">а)
-pandemiya, epidemiya, sel, zəlzələ, sürüşmə, sunami və digər
-təbii fəlakətlər;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 0.18in; margin-bottom: 0.14in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">b)
-yanğın, partlayış, nəqliyyat vasitələrinin zədələnməsi və
-ya sıradan çıxması;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 0.18in; margin-bottom: 0.14in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">c)
-bu Müqavilə nin şərtlərinin yerinə yetirilməsinə bilavasitə
-təsir göstərən tətil, sabotaj, lokaut və digər gözlənilməz
-situasiyalar;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 0.18in; margin-bottom: 0.14in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">ç)
-elan olunmuş və ya elan olunmamış müharibə, üsyan, kütləvi
-iğtişaşlar;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 0.18in; margin-bottom: 0.14in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">d)
-dövlət hakimiyyəti orqanlarının, idarələrin və ya onların
-struktur bölmələrinin qanuni və ya qanunsuz hərəkətləri;</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 0.18in; margin-bottom: 0.14in; background: #ffffff">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">е)
-qazanxanalarda, su təchizatı stansiyalarında, elektrik
-stansiyalarında qəzalar və s.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 0.18in; margin-bottom: 0.14in; background: #ffffff">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>6.
-MÜQAVİLƏNİN MÜDDƏTİ VƏ MÜBAHİSƏLƏRİN HƏLLİ</b></font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">6.1.
-Müqavilə imzalandığı tarixdən səyahətin bitməsi tarixinə
-kimi quvvədədir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">6.2.
-Bu Müqavilə iki nüsxədə tərtib olunub və eyni hüquqi gücə
-malikdir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt">6.3.
-Müqavilənin icrası ilə əlaqədar tərəflər arasında yaranmış
-mübahisələr qarşılıqlı razılıqla həll edilir. Qarşılıqlı
-razılıqla həll edilməyən mübahisələr Azərbaycan
-Respublikasının qanunvericiliyinə müvafiq olaraq Azərbaycan
-Respublikasının Məhkəmələri vasitəsilə həll ediləcəkdir.</font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>7.
-TƏRƏFLƏRİN ÜNVANI VƏ REKVİZİTLƏRİ</b></font></font></font></p>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<font color="#000000">&nbsp;</font></p>
-<table width="679" cellpadding="7" cellspacing="0">
-	<col width="309"/>
-
-	<col width="32"/>
-
-	<col width="296"/>
-
-	<tr valign="top">
-		<td width="309" height="90" style="border: none; padding: 0in"><p lang="az-Latn-AZ" class="western" align="justify" style="margin-bottom: 0in">
-			<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>7.1.
-			“TUROPERATOR”</b></font></font></font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font color="#000000">&nbsp;</font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in">“<font face="Times New Roman, serif"><b>SUMMER
-			TOUR AZERBAIJAN” MMC</b></font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif">VÖEN:
-			1404895991&nbsp;</font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif">Ünvan:&nbsp;
-			Bakı şəhəri, Səməd Vurğun küçəsi 34, AF Mall, 2-ci
-			mərtəbə.</font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif">Tel:
-			+994 12 437 47 20</font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif">E-mail:&nbsp;incomingaze@summertour.com</font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif">Veb:
-			www.summertour.az</font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif">BANK
-			RESPUBLİKA ASC</font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif">Kod:
-			503392</font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif">VÖEN
-			(Bank): 9900001901</font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif">M/H:
-			AZ80NABZ01350100000000014944</font></p>
-			<p lang="az-Latn-AZ" class="western" align="justify" style="margin-bottom: 0in">
-			<font face="Times New Roman, serif">H/H
-			(IBAN):&nbsp;</font><font color="#000000"><font face="Times New Roman, serif">AZ12BRES00380394401376074603</font></font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif">SWIFT:
-			BRESAZ 22</font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0.14in">
-			&nbsp;</p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font face="Times New Roman, serif"><b>İcraçı
-			Direktor: Qüdrət Hacıyev</b></font></p>
-			<p lang="az-Latn-AZ" class="western" style="margin-bottom: 0in"><font color="#000000">&nbsp;</font></p>
-			<p lang="az-Latn-AZ" class="western" align="justify"><font color="#000000">&nbsp;</font></p>
-		</td>
-		<td width="32" style="border: none; padding: 0in"><p lang="az-Latn-AZ" class="western" align="justify">
-			<font color="#000000">&nbsp;</font></p>
-		</td>
-		<td width="296" style="border: none; padding: 0in"><p lang="az-Latn-AZ" class="western" align="justify" style="margin-bottom: 0in">
-			<font color="#000000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>7.2.
-			“TURİST”</b></font></font></font></p>
-			<p lang="az-Latn-AZ" class="western" align="justify" style="margin-bottom: 0in">
-			<font color="#000000">&nbsp;</font></p>
-			<p lang="az-Latn-AZ" class="western" align="justify" style="margin-bottom: 0in">
-			<font color="#000000">&nbsp;</font></p>
-			<table width="100%" cellpadding="7" cellspacing="0">
-				<col width="128*"/>
-
-				<col width="128*"/>
-
-				<tr valign="top">
-					<td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in"><p lang="az-Latn-AZ" class="western" align="justify">
-						e-mail adresi</p>
-					</td>
-					<td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in"><p lang="az-Latn-AZ" class="western" align="justify">
-						<font color="#ff0000">(input)</font></p>
-					</td>
-				</tr>
-				<tr valign="top">
-					<td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in"><p lang="az-Latn-AZ" class="western" align="justify">
-						Telefon Nömrəsi</p>
-					</td>
-					<td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in"><p lang="az-Latn-AZ" class="western" align="justify">
-						<font color="#ff0000">(input)</font></p>
-					</td>
-				</tr>
-				<tr valign="top">
-					<td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in"><p lang="az-Latn-AZ" class="western" align="justify">
-						Passpportun surətini yükləyin</p>
-					</td>
-					<td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in"><p lang="az-Latn-AZ" class="western" align="justify">
-						<font color="#ff0000">(upload)</font></p>
-					</td>
-				</tr>
-			</table>
-			<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-			<br/>
-
-			</p>
-			<table width="108" cellpadding="7" cellspacing="0">
-				<col width="92"/>
-
-				<tr>
-					<td width="92" height="8" valign="top" style="border: 1px solid #000000; padding: 0in 0.08in"><p lang="az-Latn-AZ" class="western" align="justify">
-						<font color="#ff0000">v</font></p>
-					</td>
-				</tr>
-				<tr>
-					<td width="92" valign="top" style="border: 1px solid #000000; padding: 0in 0.08in"><p lang="az-Latn-AZ" class="western" align="center">
-						<font color="#ff0000"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><b>SUBMIT</b></font></font></font></p>
-					</td>
-				</tr>
-			</table>
-			<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-			Müqavilənin və onun ayrılmaz hissəsi sayılan bütün
-			əlavələrlə tanış oldum və müqavilənin şərtlərini qəbul
-			etdiyimi təsdiq edirəm. 
-			</p>
-		</td>
-	</tr>
-</table>
-<p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
-<br/>
-
-</p>
-<p lang="az-Latn-AZ" class="western" style="line-height: 107%; margin-bottom: 0.11in">
-<br/>
-<br/>
-
-</p>
+</dd></dl>
+<h4>3.4.1. Əgər konkret istiqamətdə tətbiq olunan cərimə sanksiyaları fərqli olarsa Turistə tətbiq edilən cərimə sanksiyaları hazırkı müqavilənin ayrılmaz hissəsi olan 1 saylı Əlavə şəklində rəsmiləşdiriləcək.</h4>
+  <h4>3.4.2.  Uçuş günü ləğv edilmə və ya dəyişiklik qəbul edilmir. Uçuşdan sonra ləğv etmə və ya dəyişmə sorğusuna həmin an mövcud olan vəziyyətdən asılı olaraq «TUROPERATOR»” tərəfindən baxıla bilər.</h4>
+  <h4>3.4.3. Əgər qarşılayan tərəfin təşəbbüsü ilə yuxarıda qeyd edilən şərtlərdə dəyişikliklər edilərsə, bu barədə «TUROPERATOR»” “TURİST”ə hazırki Müqavilənin imzalanmasından öncə xəbərdarlıq edir.</h4>
+  <h4>3.4.4. Aksiyalar üzrə alınan aviabiletlər, turlar və digər xidmətlər və ya turizm məhsulları dəyişdirilə və qaytarıla bilməz.</h4>
+  <h4>3.5. «TUROPERATOR»” xarici pasportun etibarsız olmasına, səfirlik tərəfindən vizanın verilməməsinə, “TURİST”in gömrük və sərhəd nəzarətindən keçə bilməməsinə görə “TURİST” qarşısında məsuliyyət daşımır.</h4>
+  <h4>3.6. Hər hansı bir səbəbdən vizanın xarici ölkənin Miqrasiya Xidməti tərəfindən təqdim edilməməsinə görə Tərəflər (“Turoperator» və Agent) heç bir maddi və mənəvi məsuliyyət daşımırlar. Sözügedən məsələyə uyğun olaraq, vizanın turist tərəfindən alınmamasına görə,  öncədən sifariş olunmuş turizm xidmətlərinə 3.4-cü bənddə əks edilən müvafiq cərimə sanksiyaları tətbiq edilir.<h4>
+  <h4> 3.7. Tura daşıyıcıların, sığorta şirkətlərinin və digər 3-cü şəxslərin və ya tərəflərin xidmətləri daxil olduğu halda, «TUROPERATOR»” yalnız əsasında xidmətlər göstərilən sənədlərin düzgün rəsmiləşdirilməsinə cavabdehdir. “TURİST”ə  göstərilən xidmətlərin təqdim edilməsi ilə bağlı sonrakı münasibətlər «TUROPERATOR»”in iştirakı olmadan həyata keçirilir.</h4>
 </body>
+
 </html>
