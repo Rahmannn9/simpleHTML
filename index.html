@@ -16,10 +16,10 @@
             var reservationInput = document.getElementById("reservationNumber");
             var pattern = /^ST\d{5}$/; // Should start with ST and be followed by 5 digits
 
-            if (!pattern.test(reservationInput.value)) {
-                 alert("Xəta: Rezervasiya nömrəsi ST ilə başlamalı və ondan sonra 5 rəqəm olmalıdır (məsələn, ST12345).");
-                 reservationInput.value = ""; // Clear the input if not matching the pattern
-             }
+            // if (!pattern.test(reservationInput.value)) {
+            //     alert("Xəta: Rezervasiya nömrəsi ST ilə başlamalı və ondan sonra 5 rəqəm olmalıdır (məsələn, ST12345).");
+            //     reservationInput.value = ""; // Clear the input if not matching the pattern
+            // }
         }
 
         function updateDate() {
@@ -296,12 +296,20 @@
 	</table>
 </dd></dl>
 <h4>3.4.1. Əgər konkret istiqamətdə tətbiq olunan cərimə sanksiyaları fərqli olarsa Turistə tətbiq edilən cərimə sanksiyaları hazırkı müqavilənin ayrılmaz hissəsi olan 1 saylı Əlavə şəklində rəsmiləşdiriləcək.</h4>
-  <h4>3.4.2.  Uçuş günü ləğv edilmə və ya dəyişiklik qəbul edilmir. Uçuşdan sonra ləğv etmə və ya dəyişmə sorğusuna həmin an mövcud olan vəziyyətdən asılı olaraq «TUROPERATOR»” tərəfindən baxıla bilər.</h4>
+  <h4>3.4.2. Uçuş günü ləğv edilmə və ya dəyişiklik qəbul edilmir. Uçuşdan sonra ləğv etmə və ya dəyişmə sorğusuna həmin an mövcud olan vəziyyətdən asılı olaraq «TUROPERATOR»” tərəfindən baxıla bilər.</h4>
   <h4>3.4.3. Əgər qarşılayan tərəfin təşəbbüsü ilə yuxarıda qeyd edilən şərtlərdə dəyişikliklər edilərsə, bu barədə «TUROPERATOR»” “TURİST”ə hazırki Müqavilənin imzalanmasından öncə xəbərdarlıq edir.</h4>
   <h4>3.4.4. Aksiyalar üzrə alınan aviabiletlər, turlar və digər xidmətlər və ya turizm məhsulları dəyişdirilə və qaytarıla bilməz.</h4>
   <h4>3.5. «TUROPERATOR»” xarici pasportun etibarsız olmasına, səfirlik tərəfindən vizanın verilməməsinə, “TURİST”in gömrük və sərhəd nəzarətindən keçə bilməməsinə görə “TURİST” qarşısında məsuliyyət daşımır.</h4>
   <h4>3.6. Hər hansı bir səbəbdən vizanın xarici ölkənin Miqrasiya Xidməti tərəfindən təqdim edilməməsinə görə Tərəflər (“Turoperator» və Agent) heç bir maddi və mənəvi məsuliyyət daşımırlar. Sözügedən məsələyə uyğun olaraq, vizanın turist tərəfindən alınmamasına görə,  öncədən sifariş olunmuş turizm xidmətlərinə 3.4-cü bənddə əks edilən müvafiq cərimə sanksiyaları tətbiq edilir.<h4>
-  <h4> 3.7. Tura daşıyıcıların, sığorta şirkətlərinin və digər 3-cü şəxslərin və ya tərəflərin xidmətləri daxil olduğu halda, «TUROPERATOR»” yalnız əsasında xidmətlər göstərilən sənədlərin düzgün rəsmiləşdirilməsinə cavabdehdir. “TURİST”ə  göstərilən xidmətlərin təqdim edilməsi ilə bağlı sonrakı münasibətlər «TUROPERATOR»”in iştirakı olmadan həyata keçirilir.</h4>
+  <h4>3.7. Tura daşıyıcıların, sığorta şirkətlərinin və digər 3-cü şəxslərin və ya tərəflərin xidmətləri daxil olduğu halda, «TUROPERATOR»” yalnız əsasında xidmətlər göstərilən sənədlərin düzgün rəsmiləşdirilməsinə cavabdehdir. “TURİST”ə  göstərilən xidmətlərin təqdim edilməsi ilə bağlı sonrakı münasibətlər «TUROPERATOR»”in iştirakı olmadan həyata keçirilir.</h4>
+  <h4>3.8. «TUROPERATOR»” onun səlahiyyətinə daxil olmayan pozuntu və hərəkətlərə görə məsuliyyət daşımır.</h4>
+  <h4>3.9. «TUROPERATOR»” aşağıdakı bəndlər üzrə məsuliyyət daşımır:</h4>
+  <h5 style="font-weight: bold;color: red;">a) Azərbaycan və xarici dövlətlərin ərazisində fəaliyyət göstərən gömrük, emiqrasiya, sərhəd və digər xidmətlər tərəfindən turistin günahı üzündən səfərdən çıxarılması.</h5>
+  <h5 style="font-weight: bold;color: red;">b) Turistin yükünü yükdaşiyanın məsuliyyəti altında olduğu dövrdə və yükün yükdaşınmasında olmadığı dövrdə.</h5>
+  <h5 style="font-weight: bold;color: red;">c) Səyahətin qiymətinin nəqliyyat vasitələrinin yol qiymətlərinin yüksəlməsi ilə əlaqədar qalxdığı zaman.</h5>
+  <h5 style="font-weight: bold;color: red;">d) Turist səyahətə gecikdiyi zaman tam maddi məsuliyyət daşıyır.</h5>
+  <h4>3.10. Viza tələb olunan istiqamətlərdə, viza həmin ölkənin müəyyən olunmuş qayda və qanunvericiliyi əsasında Azərbaycan Respublikası ərazisində və ya təmsilçi ölkənin ərazisindəki səfirlik, konsulluq və ya istiqamət olan ölkənin miqrassiya orqanında rəsmiləşdirilir. “TURİST”  tərəfindən viza qayda və/və ya qanun pozuntusu və bu kimi digər hallar baş verdikdə Azərbaycan Respublikasının və/və ya viza alınan ölkənin müəyyən qanunvericiliyi əsasında həll olunur. Viza üçün alınan rüsum heç bir halda geri ödənilmir.</h4>
+  <h4>3.11. Hava Yolu şirkəti reys cədvəlində hər hansı dəyişiklik və yaxud ləğvetmə tətbiq edərsə, Agent və «Turoperator»  buna görə məsuliyyət daşımırlar.Agent və “Turoperator» bunun müqabilində tarix dəyişikliyi və yaxud eyni tarixlərə fərqli reyslər təklif və təqdim edə bilərlər. Bununla əlaqədar olaraq, turun qiymətində müvafiq dəyişikliklər nəzərdə tutula bilər.</h4>
 </body>
 
 </html>
