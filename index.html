@@ -16,10 +16,10 @@
             var reservationInput = document.getElementById("reservationNumber");
             var pattern = /^ST\d{5}$/; // Should start with ST and be followed by 5 digits
 
-            // if (!pattern.test(reservationInput.value)) {
-            //     alert("Xəta: Rezervasiya nömrəsi ST ilə başlamalı və ondan sonra 5 rəqəm olmalıdır (məsələn, ST12345).");
-            //     reservationInput.value = ""; // Clear the input if not matching the pattern
-            // }
+            if (!pattern.test(reservationInput.value)) {
+                 alert("Xəta: Rezervasiya nömrəsi ST ilə başlamalı və ondan sonra 5 rəqəm olmalıdır (məsələn, ST12345).");
+                 reservationInput.value = ""; // Clear the input if not matching the pattern
+             }
         }
 
         function updateDate() {
