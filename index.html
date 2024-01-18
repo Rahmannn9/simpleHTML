@@ -744,19 +744,39 @@
                                 <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
                                     <p lang="az-Latn-AZ" class="western" align="justify">Passpportun surətini yükləyin
                                     </p>
-                                </td>
-                                <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
-                                    <p lang="az-Latn-AZ" class="western" align="justify">
-                                        <input type="file" name="Yüklə" id="Yüklə" accept=".jpg, .jpeg, .png" />
-                                        <button type="button" onclick="clearFileInput('upload')">İmtina</button>
-                                    </p>
-                                </td>
+                                    <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
+                                        <p lang="az-Latn-AZ" class="western" align="justify">
+                                            <input type="file" name="Yüklə" id="Yüklə" accept=".jpg, .jpeg, .png, .pdf" onchange="checkFileSize(this)">
+                                            <button type="button" onclick="clearFileInput('Yüklə')">İmtina</button>
+                                        </p>
+                                    </td>
+                                    
+                                    <script>
+                                        function checkFileSize(input) {
+                                            const maxFileSizeInBytes = 5 * 1024 * 1024; // 5 MB
+                                    
+                                            if (input.files.length > 0) {
+                                                const fileSize = input.files[0].size;
+                                    
+                                                if (fileSize > maxFileSizeInBytes) {
+                                                    alert("File size exceeds the maximum allowed size (5 MB). Please choose a smaller file.");
+                                                    clearFileInput(input.id);
+                                                }
+                                            }
+                                        }
+                                    
+                                        function clearFileInput(inputId) {
+                                            // Add your logic to clear the file input
+                                            document.getElementById(inputId).value = "";
+                                        }
+                                    </script>
+                                    
                             </tr>
                             <tr valign="top">
                                 <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
                                     <p lang="az-Latn-AZ" class="western" align="justify">Müqavilənin və onun ayrılmaz
                                         hissəsi sayılan bütün əlavələrlə tanış oldum və müqavilənin şərtlərini qəbul
-                                        etdiyimi</p>
+                                        etdiyimi təsdiq edirəm.</p>
                                 </td>
                                 <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
                                     <p lang="az-Latn-AZ" class="western" align="justify">
