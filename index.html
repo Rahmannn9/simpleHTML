@@ -382,38 +382,53 @@
             <col width="128*">
             <col width="128*">
         </colgroup>
-        <tbody>
-            <tr valign="top">
-                <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
-                    <p lang="az-Latn-AZ" class="western" align="justify">e-mail adresi</p>
-                </td>
-                <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
-                    <p lang="az-Latn-AZ" class="western" align="justify">
-                        <input type="text" name="Email" id="Email" placeholder="E-mail Addresi" style="background-color: yellow;">
-                    </p>
-                </td>
-            </tr>
-            <tr valign="top">
-                <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
-                    <p lang="az-Latn-AZ" class="western" align="justify">Telefon Nömrəsi</p>
-                </td>
-                <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
-                    <p lang="az-Latn-AZ" class="western" align="justify">
-                        <input type="text" name="Telefon" id="Telefon" placeholder="Telefon Nomresi" style="background-color: yellow;">
-                    </p>
-                </td>
-            </tr>
-            <tr valign="top">
-                <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
-                    <p lang="az-Latn-AZ" class="western" align="justify">Passpportun surətini yükləyin</p>
-                </td>
-                <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
-                    <p lang="az-Latn-AZ" class="western" align="justify">
-                        <input type="file" name="upload" id="upload" accept="image/*" />
-                    </p>
-                </td>
-            </tr>
-        </tbody>
+        <script>
+    function clearFileInput(inputId) {
+        var input = document.getElementById(inputId);
+        input.value = ''; // Clear the input
+    }
+</script>
+
+
+    <colgroup>
+        <col width="128*">
+        <col width="128*">
+    </colgroup>
+    <tbody>
+        <tr valign="top">
+            <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
+                <p lang="az-Latn-AZ" class="western" align="justify">e-mail adresi</p>
+            </td>
+            <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
+                <p lang="az-Latn-AZ" class="western" align="justify">
+                    <input type="text" name="Email" id="Email" placeholder="E-mail Addresi" style="background-color: yellow;">
+                </p>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
+                <p lang="az-Latn-AZ" class="western" align="justify">Telefon Nömrəsi</p>
+            </td>
+            <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
+                <p lang="az-Latn-AZ" class="western" align="justify">
+                    <input type="text" name="Telefon" id="Telefon" placeholder="Telefon Nomresi" style="background-color: yellow;">
+                </p>
+            </td>
+        </tr>
+        <tr valign="top">
+            <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
+                <p lang="az-Latn-AZ" class="western" align="justify">Passpportun surətini yükləyin</p>
+            </td>
+            <td width="50%" style="border: 1px solid #000000; padding: 0in 0.08in">
+                <p lang="az-Latn-AZ" class="western" align="justify">
+                    <input type="file" name="upload" id="upload" accept=".jpg, .jpeg, .png">
+                    <button type="button" onclick="clearFileInput('upload')">Cancel</button>
+                </p>
+            </td>
+        </tr>
+    </tbody>
+
+
     </table>
     
     <p lang="az-Latn-AZ" class="western" align="justify" style="line-height: 107%; margin-bottom: 0in">
